@@ -1,89 +1,133 @@
-# Employee HR Analytics System Using SQL
+# 🚀 Employee HR Analytics System Using SQL
 
-## Project Overview
-This project is an Employee HR Analytics System developed using MySQL Workbench.  
-The project analyzes employee records, salary trends, department performance, and employee attrition using SQL queries, stored procedures, views, and triggers.
+<div align="center">
 
-The goal of this project is to demonstrate practical SQL skills used in real-world HR analytics and database management systems.
+![SQL](https://img.shields.io/badge/SQL-MySQL-blue?style=for-the-badge\&logo=mysql)
+![Database](https://img.shields.io/badge/Database-Management-orange?style=for-the-badge)
+![Analytics](https://img.shields.io/badge/HR-Analytics-green?style=for-the-badge)
+![Project](https://img.shields.io/badge/Project-Beginner%20Friendly-purple?style=for-the-badge)
 
----
-
-## Technologies Used
-- MySQL Workbench
-- SQL
-- IBM HR Analytics Employee Attrition Dataset
+</div>
 
 ---
 
-## Dataset
-Dataset used:
-IBM HR Analytics Employee Attrition Dataset
+# 📌 Project Overview
 
-Dataset Link:
-https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
+This project is an **Employee HR Analytics System** developed using **MySQL Workbench** and SQL.
 
----
+The project performs:
 
-## Features
-- Employee database management
-- Salary analysis
-- Department-wise employee analysis
-- Attrition analysis
-- Work-life balance insights
-- Stored procedures
-- SQL triggers
-- HR reporting queries
+* 📊 Employee analytics
+* 💰 Salary analysis
+* 🏢 Department performance analysis
+* 📉 Employee attrition analysis
+* ⚡ Trigger-based salary tracking
+* 🧠 HR insights using SQL queries
+
+This project demonstrates practical SQL skills used in real-world database management and HR analytics systems.
 
 ---
 
-## Database Name
+# 🛠️ Technologies Used
+
+| Technology      | Purpose                 |
+| --------------- | ----------------------- |
+| MySQL Workbench | Database Management     |
+| SQL             | Data Analysis & Queries |
+| Kaggle Dataset  | HR Employee Data        |
+
+---
+
+# 📂 Dataset
+
+📁 **Dataset Used:** IBM HR Analytics Employee Attrition Dataset
+
+🔗 Dataset Link:
+[https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+
+---
+
+# ✨ Features
+
+✅ Employee Database Management
+✅ Department-wise Salary Analysis
+✅ Employee Attrition Analysis
+✅ Work-Life Balance Insights
+✅ Stored Procedures
+✅ SQL Triggers
+✅ Aggregate Functions
+✅ HR Reporting Queries
+
+---
+
+# 🗄️ Database Structure
+
+## 📌 Database Name
+
 ```sql
 hr_dashboard
 ```
 
 ---
 
-## Main Tables
+## 📌 Main Tables
 
-### employees
-Contains employee information such as:
-- Employee Number
-- Department
-- Job Role
-- Salary
-- Attrition
-- Gender
-- Work-life balance
+### 👨‍💼 employees
 
-### salary_log
-Stores salary update history using triggers.
+Contains:
 
----
+* Employee Information
+* Department Details
+* Job Roles
+* Salary Information
+* Attrition Status
+* Work-Life Balance
 
-## SQL Concepts Used
-- CREATE DATABASE
-- CREATE TABLE
-- SELECT
-- WHERE
-- GROUP BY
-- ORDER BY
-- Aggregate Functions
-- Views
-- Stored Procedures
-- Triggers
-- UPDATE statements
+### 💰 salary_log
+
+Stores:
+
+* Old Salary
+* Updated Salary
+* Salary Update Tracking
 
 ---
 
-## Sample Queries
+# 🧠 SQL Concepts Used
 
-### Total Employees
+<div align="center">
+
+| SQL Concepts        |
+| ------------------- |
+| CREATE DATABASE     |
+| CREATE TABLE        |
+| SELECT              |
+| WHERE               |
+| GROUP BY            |
+| ORDER BY            |
+| Aggregate Functions |
+| Views               |
+| Stored Procedures   |
+| Triggers            |
+| UPDATE Statements   |
+
+</div>
+
+---
+
+# 📊 Sample SQL Queries
+
+## 🔹 Total Employees
+
 ```sql
 SELECT COUNT(*) AS TotalEmployees
 FROM employees;
 ```
 
-### Department-wise Average Salary
+---
+
+## 🔹 Department-wise Average Salary
+
 ```sql
 SELECT Department,
 AVG(MonthlyIncome) AS AvgSalary
@@ -91,7 +135,10 @@ FROM employees
 GROUP BY Department;
 ```
 
-### Attrition Analysis
+---
+
+## 🔹 Attrition Analysis
+
 ```sql
 SELECT Attrition,
 COUNT(*) AS EmployeeCount
@@ -101,36 +148,50 @@ GROUP BY Attrition;
 
 ---
 
-## Stored Procedure
+# ⚡ Stored Procedure
 
-### High Salary Employees
+## 🔹 High Salary Employees
+
 ```sql
 CALL HighSalaryEmployees();
 ```
 
-Displays employees having salary greater than 10000.
+📌 Displays employees having salary greater than 10000.
 
 ---
 
-## Trigger
+# 🔔 Trigger Used
 
-### salary_update_trigger
-Automatically stores old and new salary values whenever employee salary is updated.
+## 🔹 salary_update_trigger
 
----
+Automatically stores:
 
-## Screenshots
-Project screenshots are available in the `screenshots` folder.
+* Old Salary
+* New Salary
 
-Examples:
-- Database structure
-- Query outputs
-- Trigger results
-- Stored procedure outputs
+Whenever employee salary gets updated.
 
 ---
 
-## Project Structure
+# 📸 Project Screenshots
+
+📁 Screenshots included in:
+
+```text
+screenshots/
+```
+
+### Included Screenshots:
+
+* 🗄️ Database Structure
+* 📊 Query Outputs
+* ⚡ Trigger Output
+* 🧠 Stored Procedure Output
+* 💻 MySQL Workbench Interface
+
+---
+
+# 📁 Project Structure
 
 ```text
 Employee_HR_Analytics_Project/
@@ -143,24 +204,44 @@ Employee_HR_Analytics_Project/
 
 ---
 
-## Learning Outcomes
+# 🎯 Learning Outcomes
+
 Through this project, I learned:
-- Database creation and management
-- Writing analytical SQL queries
-- Using aggregate functions
-- Creating stored procedures
-- Implementing SQL triggers
-- HR data analysis using SQL
+
+✅ Database Creation & Management
+✅ SQL Query Writing
+✅ Aggregate Functions
+✅ Data Analysis Using SQL
+✅ Stored Procedures
+✅ SQL Triggers
+✅ HR Analytics Concepts
 
 ---
 
-## Future Improvements
-- Power BI Dashboard Integration
-- Python Data Analysis
-- Employee Attrition Prediction using Machine Learning
-- Web Dashboard Development
+# 🚀 Future Improvements
+
+🔹 Power BI Dashboard Integration
+🔹 Python Data Analysis
+🔹 Machine Learning Attrition Prediction
+🔹 Interactive Web Dashboard
 
 ---
 
-## Author
-Tanu Tyagi
+# 🌟 Project Highlights
+
+<div align="center">
+
+📊 Real-World HR Dataset
+⚡ Advanced SQL Concepts
+💡 Beginner-Friendly Project
+🚀 Resume Ready
+
+</div>
+
+---
+
+# 👩‍💻 Author
+
+## Tanu Tyagi
+
+💼 Aspiring Data Analyst & SQL Developer
